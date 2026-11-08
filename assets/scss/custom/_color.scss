@@ -1,0 +1,43 @@
+$brand-colors: (
+  "primary": #4a69e8,
+  "danger": #36c99f,
+  "black": #141a1f,
+  "white": #fcfcfd,
+);
+$primary-palette: (
+  97: #f1f4fd,
+  90: #d2d9f9,
+  80: #a4b4f3,
+  70: #778eee,
+  60: #4a69e8,
+  40: #1736b5,
+  25: #0e2271,
+);
+$secondary-palette: (
+  90: #d7f4ec,
+  70: #87dec5,
+  50: #36c99f,
+  35: #268c6f,
+);
+$natural-palette: (
+  95: #f0f3f5,
+  90: #e0e5eb,
+  85: #d1d9e1,
+  75: #b2bfcc,
+  60: #8599ad,
+  50: #667f99,
+  30: #3d4d5c,
+  10: #141a1f,
+);
+$alpha: rgba(map-get($brand-colors, "black"), 0.6);
+$danger-palette: (
+  90: #ffd0cc,
+  70: #ff7467,
+  45: #e51300,
+);
+$warning-palette: (
+  90: #ffeacc,
+  48: #f58f00,
+  35: #b26800,
+);
+$shadow-base: 0px 0px 16px rgba(0, 0, 0, 0.12);

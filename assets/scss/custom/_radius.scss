@@ -1,0 +1,16 @@
+.radius-card {
+  border-radius: 24px;
+  @media (min-width: $mobile-max-width) {
+    border-radius: 16px;
+  }
+}
+.radius-btn {
+  border-radius: 16px;
+  @media (min-width: $mobile-max-width) {
+    border-radius: 12px;
+  }
+}
+.radius-tag,
+.radius-dropdown {
+  border-radius: 12px;
+}

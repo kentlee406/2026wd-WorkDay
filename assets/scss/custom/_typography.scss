@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Mina:wght@400;700&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mina:wght@400;700&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
+// 拉丁字母（英數字元）：Inter 包含了完整的英文與數字字型，當瀏覽器渲染英文字母時，會直接使用 Inter。
+// 漢字（中文字元）：Inter 不包含中文字型，當瀏覽器遇到中文字時，發現 Inter 無法顯示，就會自動向右尋找下一個字體，這時就會成功對應到 'Noto Sans TC'。
+
+// 定義字體變數
+$font-family-base:
+  "Inter",
+  "Noto Sans TC",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif;
+
+// 套用到全域字體
+body {
+  font-family: $font-family-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.display {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 1;
+  @media (max-width: $mobile-max-width) {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
+.title5 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.2;
+  @media (max-width: $mobile-max-width) {
+    font-size: 32px;
+  }
+}
+.title4 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.2;
+  @media (max-width: $mobile-max-width) {
+    font-size: 28px;
+  }
+}
+.title3 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.2;
+  @media (max-width: $mobile-max-width) {
+    font-size: 24px;
+  }
+}
+.title2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.2;
+  @media (max-width: $mobile-max-width) {
+    font-size: 20px;
+  }
+}
+.title1 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.2;
+  @media (max-width: $mobile-max-width) {
+    font-size: 18px;
+  }
+}
+
+.body-lg {
+  font-size: 18px;
+  line-height: 1.5;
+  @media (max-width: $mobile-max-width) {
+    font-size: 16px;
+  }
+}
+.body-md {
+  font-size: 16px;
+  line-height: 1.5;
+  @media (max-width: $mobile-max-width) {
+    font-size: 14px;
+  }
+}
+.body-sm {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.body-xs {
+  font-size: 12px;
+  line-height: 1.5;
+}

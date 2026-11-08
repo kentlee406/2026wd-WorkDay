@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  /* 預設為手機版：4欄、Gutter 16px、Margin 12px */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* 當螢幕大於 1024px 或電腦版時切換為 Desktop HD 規格 */
+@media (min-width: $mobile-max-width) {
+  .container {
+    max-width: 1920px;
+    /* 12欄、Gutter 24px、Margin 312px */
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    padding-left: 312px;
+    padding-right: 312px;
+  }
+}
