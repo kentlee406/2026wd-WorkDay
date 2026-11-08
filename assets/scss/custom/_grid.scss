@@ -21,3 +21,10 @@
     padding-right: 312px;
   }
 }
+
+.rowspan {
+  grid-column: span 4;
+  @media (min-width: $mobile-max-width) {
+    grid-column: span 12;
+  }
+}
