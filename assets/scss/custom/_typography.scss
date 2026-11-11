@@ -15,12 +15,6 @@ $font-family-base:
   Arial,
   sans-serif;
 
-// 套用到全域字體
-body {
-  font-family: $font-family-base;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 .display {
   font-weight: bold;
   font-size: 80px;

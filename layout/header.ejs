@@ -1,7 +1,53 @@
 <header class="rowspan">
   <div class="d-flex justify-content-between">
     <div><img src="/assets/images/logo.png" alt="職旅LOGO" /></div>
-    <div>2</div>
-    <div>3</div>
+    <div class="header-menu">
+      <a href="">服務方案</a>
+      <a href="">關於職旅</a>
+      <a href="">聯絡我們</a>
+    </div>
+    <div>
+      <button class="btn-login-register body-md radius-btn" type="button">
+        登入/註冊
+      </button>
+      <button
+        class="btn btn-menu"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+      >
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+
+      <div
+        class="offcanvas offcanvas-end offcanvas-custom"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column header-menu">
+          <a href="">服務方案</a>
+          <a href="">關於職旅</a>
+          <a href="">聯絡我們</a>
+        </div>
+        <div class="offcanvas-footer">
+          <button
+            class="btn-login-register btn-green body-md radius-btn w-100"
+            type="button"
+          >
+            登入/註冊
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </header>

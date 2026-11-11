@@ -1,3 +1,53 @@
-h1 {
-  color: map-get($danger-palette, 70);
+body {
+  font-family: $font-family-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: map-get($brand-colors, "white");
+}
+
+.header-menu {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 24px;
+    &:hover,
+    &:active {
+      color: blue;
+    }
+  }
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
+}
+
+.btn-login-register {
+  padding: 8px 24px;
+  border: 1px solid #d1d9e1;
+  background-color: #fcfcfd;
+  color: #141a1f;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  &:hover {
+    background-color: #e0e5eb;
+  }
+  @media (max-width: $mobile-max-width) {
+    padding: 8px 16px;
+  }
+}
+.btn-menu {
+  &:hover {
+    background-color: #e0e5eb;
+  }
+  @media (min-width: $mobile-max-width) {
+    display: none;
+  }
+}
+.offcanvas-custom {
+  padding: 24px;
+}
+.btn-green {
+  background-color: #36c99f;
 }
