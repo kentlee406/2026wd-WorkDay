@@ -51,3 +51,34 @@ body {
 .btn-green {
   background-color: #36c99f;
 }
+footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #f0f3f5;
+  border: 1px solid
+    linear-gradient(
+      to right,
+      rgba(209, 217, 225, 0) 0%,
+      rgba(209, 217, 225, 1) 50%,
+      rgba(209, 217, 225, 0) 100%
+    );
+  a {
+    text-decoration: none;
+    color: #141a1f;
+    padding: 8px 24px;
+    &:hover,
+    &:active {
+      color: blue;
+    }
+  }
+  @media (min-width: $mobile-max-width) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    a {
+      padding: 8px 16px;
+    }
+  }
+}
+.copyright {
+  color: #667f99;
+}
