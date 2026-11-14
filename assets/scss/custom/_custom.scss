@@ -101,3 +101,33 @@ footer {
     }
   }
 }
+
+.plan-banner {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url("/assets/images/service/banner-bg-pc.png");
+  background-repeat: repeat;
+  background-size: cover;
+  .content {
+    margin-left: 248px;
+    margin-right: 248px;
+    h1 {
+      margin-bottom: 48px;
+    }
+    p {
+      color: #667f99;
+    }
+  }
+  @media (max-width: $mobile-max-width) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    .content {
+      margin-left: 12px;
+      margin-right: 12px;
+      h1 {
+        margin-bottom: 24px;
+      }
+    }
+    background-image: url("/assets/images/service/banner-bg.png");
+  }
+}
