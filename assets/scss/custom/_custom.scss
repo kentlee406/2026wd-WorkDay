@@ -203,7 +203,8 @@ footer {
     list-style-type: none;
   }
 }
-.plan-btn {
+.plan-btn,
+.consult-btn {
   background-color: map-get($brand-colors, "black");
   color: map-get($brand-colors, "white");
   border: none;
@@ -233,14 +234,37 @@ footer {
   top: 0;
 }
 
+.consult-service {
+  background-color: map-get($natural-palette, 95);
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
 .consult-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  @media (max-width: $mobile-max-width) {
+    grid-template-columns: 1fr;
+  }
   gap: 24px;
   .consult-item {
     padding: 24px;
     list-style-type: none;
     border: 1px solid #d1d9e1;
     @extend .radius-card;
+    h3 {
+      margin-top: 24px;
+      margin-bottom: 8px;
+      @media (max-width: $mobile-max-width) {
+        margin-top: 16px;
+      }
+    }
+    .consult-description {
+      color: map-get($natural-palette, 50);
+      margin-bottom: 8px;
+    }
+    .consult-price {
+      color: map-get($brand-colors, "primary");
+    }
   }
 }
