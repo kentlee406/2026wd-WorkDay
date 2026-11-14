@@ -214,11 +214,15 @@ footer {
     background-color: map-get($secondary-palette, 50);
   }
 }
-.plan-hot {
+.hot {
   border: 2px solid map-get($secondary-palette, 50);
   position: relative;
+  .content {
+    // 預留 hot-tag 高度,避免標籤蓋住文字
+    padding-top: 16px;
+  }
 }
-.plan-hot-tag {
+.hot-tag {
   position: absolute;
   background-color: map-get($secondary-palette, 50);
   color: map-get($brand-colors, "black");
@@ -227,4 +231,16 @@ footer {
   border-bottom-right-radius: 12px;
   left: 0;
   top: 0;
+}
+
+.consult-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  .consult-item {
+    padding: 24px;
+    list-style-type: none;
+    border: 1px solid #d1d9e1;
+    @extend .radius-card;
+  }
 }
