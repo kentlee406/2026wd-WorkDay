@@ -41,3 +41,10 @@ $warning-palette: (
   35: #b26800,
 );
 $shadow-base: 0px 0px 16px rgba(0, 0, 0, 0.12);
+
+.cr-primary {
+  color: map-get($brand-colors, "primary");
+}
+.cr-black {
+  color: map-get($brand-colors, "black");
+}

@@ -131,3 +131,68 @@ footer {
     background-image: url("/assets/images/service/banner-bg.png");
   }
 }
+.plan-goal {
+  margin-top: 80px;
+  margin-bottom: 48px;
+  @media (max-width: $mobile-max-width) {
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
+}
+.plan-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-wrap: wrap;
+  @media (max-width: $mobile-max-width) {
+    gap: 16px;
+  }
+}
+.plan-card {
+  list-style-type: none;
+  padding: 48px;
+  border: 1px solid #d1d9e1;
+  @extend .radius-card;
+  @media (max-width: $mobile-max-width) {
+    padding: 24px;
+  }
+}
+.plan-items {
+  li {
+    list-style-type: none;
+    position: relative;
+    &::before {
+      left: -24px;
+      transform: translateY(50%) rotate(45deg);
+      content: "";
+      position: absolute;
+      width: 10px; /* 14px ÷ 1.414 ≈ 9.9px */
+      height: 10px;
+      border: 2px solid #4a69e8; /* 框線粗細與顏色 */
+      box-sizing: border-box; /* 確保框線不會撐大總尺寸 */
+      transform-origin: center;
+    }
+  }
+}
+.plan-suit-price {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 24px 0;
+  padding: 24px;
+  background-color: map-get($natural-palette, 95);
+  li {
+    list-style-type: none;
+  }
+}
+.plan-btn {
+  background-color: map-get($brand-colors, "black");
+  color: map-get($brand-colors, "white");
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  @extend .body-md;
+  &:hover {
+    background-color: map-get($brand-colors, "dark-black");
+  }
+}
